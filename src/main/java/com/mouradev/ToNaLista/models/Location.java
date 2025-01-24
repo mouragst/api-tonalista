@@ -15,6 +15,10 @@ public class Location {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    @ManyToOne
+    @JoinColumn(name = "company_id")
+    private Company company;
+
     @Column(name = "name")
     private String name;
 

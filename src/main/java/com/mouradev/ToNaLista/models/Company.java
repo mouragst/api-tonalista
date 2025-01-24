@@ -73,6 +73,9 @@ public class Company {
     @Column(name = "state", length = 2)
     private String state;
 
+    @Column(name = "country", length = 50)
+    private String country;
+
     @Column(name = "phone_number")
     private String phoneNumber;
 

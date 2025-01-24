@@ -10,5 +10,6 @@ import java.util.List;
 public interface LocationRepository extends JpaRepository<Location, Long> {
     
     List<Location> findAllByCategoryId(Integer categoryId);
+    List<Location> findAllByCompanyId(Integer companyId);
     
 }

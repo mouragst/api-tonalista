@@ -15,6 +15,10 @@ public class Supplier {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
+    @ManyToOne
+    @JoinColumn(name = "company_id")
+    private Company company;
+
     @Column(name = "cnpj", length = 14)
     private String cnpj;
 

@@ -10,6 +10,6 @@ import java.time.LocalDate;
 @Repository
 public interface EventRepository extends JpaRepository<Event, Long> {
     
-    List<Event> findAllByDate(LocalDate date);
-    
+    List<Event> findAllByDateAndCompanyId(LocalDate date, Integer companyId);
+    List<Event> findAllByCompany(Integer companyId);
 }

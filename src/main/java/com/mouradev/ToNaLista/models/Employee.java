@@ -22,13 +22,13 @@ public class Employee {
     @Column(name = "employee_type", length = 50)
     private String employeeType;
 
-    @Column(name = "cpf", length = 11)
+    @Column(name = "cpf", length = 11, nullable = true)
     private String cpf;
 
-    @Column(name = "cnpj", length = 14)
+    @Column(name = "cnpj", length = 14, nullable = true)
     private String cnpj;
 
-    @Column(name = "razao_social")
+    @Column(name = "razao_social", nullable = true)
     private String razaoSocial;
 
     @Column(name = "assignment", length = 100)
@@ -40,10 +40,10 @@ public class Employee {
     @Column(name = "turn", length = 50)
     private String turn;
 
-    @Column(name = "salary")
+    @Column(name = "salary", nullable = true)
     private Double salary;
 
-    @Column(name = "salary_hour")
+    @Column(name = "salary_hour", nullable = true)
     private Double salaryHour;
 
     @Column(name = "email")

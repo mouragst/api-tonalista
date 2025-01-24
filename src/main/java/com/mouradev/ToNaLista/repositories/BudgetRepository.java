@@ -9,6 +9,6 @@ import java.util.List;
 @Repository
 public interface BudgetRepository extends JpaRepository<Budget, Long> {
     
-    List<Budget> findAllByEventId(Long eventId);
+    List<Budget> findAllByEventId(Integer eventId);
     
 }
